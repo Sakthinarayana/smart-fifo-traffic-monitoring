@@ -103,25 +103,12 @@ The primary objectives of this project are:
 
 ---
 
-# System Architecture Diagram
+# System Architecture Diagram and RTL Block Diagram
 
 > **Paste your complete Smart FIFO architecture diagram below**
 
-```text
-images/system_architecture.png
-```
 
----
-
-# RTL Block Diagram
-
-> **Paste your RTL block diagram here**
-
-```text
-images/rtl_block_diagram.png
-```
-
----
+<img width="1536" height="1024" alt="ChatGPT Image Jul 8, 2026, 10_04_19 AM" src="https://github.com/user-attachments/assets/13512625-c49d-4527-81db-a48a6f0bfc54" />
 
 # Functional Blocks
 
@@ -300,26 +287,25 @@ These alerts enable intelligent buffer management and prevent data loss.
 
 # Project Highlights
 
-✅ Synchronous FIFO Architecture
+-  Synchronous FIFO Architecture
 
-✅ Intelligent Traffic Monitoring
+ - Intelligent Traffic Monitoring
 
-✅ Occupancy Analysis
+-  Occupancy Analysis
 
-✅ Throughput Estimation
+-  Throughput Estimation
 
-✅ Buffer Utilization Calculation
+-  Buffer Utilization Calculation
 
-✅ Congestion Detection
+-  Congestion Detection
 
-✅ Alert Generation
+-  Alert Generation
 
-✅ FPGA Implementation
+-  FPGA Implementation
 
-✅ ASIC Physical Design Flow
+- ASIC Physical Design Flow
 
-✅ Modular Verilog RTL Design
+- Modular Verilog RTL Design
 
 ---
 
-> 📌 **Next:** **Part 2** will cover the **RTL Design, Working Principle, Verilog Modules, Verification Flow, NCLAUNCH/Vivado Waveforms, FPGA Implementation, and image placeholders** exactly like a professional ASIC project README.
