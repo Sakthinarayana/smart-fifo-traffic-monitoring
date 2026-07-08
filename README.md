@@ -372,11 +372,8 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## RTL Simulation (Cadence NCLAUNCH)
 
-> **Paste NCLAUNCH simulation waveform**
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/f4acd7f3-7314-495f-8666-e093225b1b78" />
 
-<p align="center">
-<img src="images/nclaunch_waveform.png" width="900">
-</p>
 
 ---
 
