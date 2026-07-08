@@ -1,4 +1,4 @@
-# 🚀 Design and Development of Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
+#  Design and Development of Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
 
 ![Verilog](https://img.shields.io/badge/Language-Verilog-blue)
 ![ASIC](https://img.shields.io/badge/Flow-RTL--to--GDSII-success)
