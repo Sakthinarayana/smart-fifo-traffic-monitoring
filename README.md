@@ -428,15 +428,11 @@ GDSII Generation
 
 # Physical Design
 
-## Floorplanning
-
-<img width="1600" height="802" alt="image" src="https://github.com/user-attachments/assets/556132a2-9cac-4e84-9d84-26e3c2f12fe2" />
-
 ---
 
 ## Placement
 
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/a17d7f65-7e40-4fb4-b67b-0e15b11a2235" />
+<img width="1600" height="900" alt="WhatsApp Image 2026-06-26 at 8 32 02 AM" src="https://github.com/user-attachments/assets/71e72b7b-6cfd-484e-a4e1-58dd7b6a4faa" />
 
 ---
 
