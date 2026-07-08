@@ -105,10 +105,11 @@ The primary objectives of this project are:
 
 # System Architecture Diagram and RTL Block Diagram
 
-> **Paste your complete Smart FIFO architecture diagram below**
-
+---
 
 <img width="1536" height="1024" alt="ChatGPT Image Jul 8, 2026, 10_04_19 AM" src="https://github.com/user-attachments/assets/13512625-c49d-4527-81db-a48a6f0bfc54" />
+
+---
 
 # Functional Blocks
 
