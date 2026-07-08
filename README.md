@@ -1,7 +1,9 @@
+# 🚀 Design and Development of Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
 
-# 🚀 Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
-
-> **Design | Verification | FPGA Implementation | RTL-to-GDSII ASIC Flow**
+![Verilog](...)
+![Cadence](...)
+![RTL-to-GDSII](...)
+![FPGA](...)
 
 A Verilog HDL-based Smart FIFO architecture capable of performing real-time traffic monitoring, occupancy analysis, throughput estimation, congestion detection, and intelligent buffer management while maintaining high-speed FIFO functionality.
 
