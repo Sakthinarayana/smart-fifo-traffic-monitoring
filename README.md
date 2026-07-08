@@ -1,11 +1,5 @@
 #  Design and Development of Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
 
-![Verilog](...)
-![Cadence](...)
-![RTL-to-GDSII](...)
-![FPGA](...)
----
-
 # Abstract
 
 Modern digital systems such as **Network-on-Chip (NoC), communication routers, FPGA-based platforms, embedded processors, data acquisition systems, and high-speed communication interfaces** require efficient buffering mechanisms capable of handling continuous data transfer while maintaining high throughput and low latency.
