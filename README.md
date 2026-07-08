@@ -1,6 +1,9 @@
 #  Design and Development of Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis
 
-> **Design | Verification | FPGA Implementation | RTL-to-GDSII ASIC Flow** <
+![Verilog](...)
+![Cadence](...)
+![RTL-to-GDSII](...)
+![FPGA](...)
 ---
 
 # Abstract
