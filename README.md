@@ -43,66 +43,6 @@ The primary objectives of this project are:
 
 ---
 
-# System Architecture
-
-```text
-                          +----------------------------+
-                          |      Input Interface       |
-                          | data_in, wr_en, clk, rst   |
-                          +-------------+--------------+
-                                        |
-                                        |
-                                        V
-                          +----------------------------+
-                          |     Write Controller       |
-                          +-------------+--------------+
-                                        |
-                                        |
-                                        V
-                          +----------------------------+
-                          |       FIFO Memory          |
-                          |       128 × 32-bit         |
-                          +-------------+--------------+
-                                        |
-                                        |
-                                        V
-                          +----------------------------+
-                          |      Read Controller       |
-                          +-------------+--------------+
-                                        |
-                                        |
-                                        V
-                          +----------------------------+
-                          |      Output Interface      |
-                          |      data_out              |
-                          +----------------------------+
-
----------------------------------------------------------------------
-
-                 Intelligent Monitoring and Analysis Subsystem
-
-               +----------------------------------------------+
-               |         Traffic Monitoring Unit              |
-               +-------------------+--------------------------+
-                                   |
-                                   V
-               +----------------------------------------------+
-               |          Occupancy Analyzer                 |
-               +-------------------+--------------------------+
-                                   |
-                                   V
-               +----------------------------------------------+
-               |          Throughput Monitor                 |
-               +-------------------+--------------------------+
-                                   |
-                                   V
-               +----------------------------------------------+
-               |         Alert Generation Unit               |
-               +----------------------------------------------+
-```
-
----
-
 # System Architecture Diagram and RTL Block Diagram
 
 ---
@@ -379,7 +319,7 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## RTL Simulation (Vivado)
 
-> **Paste Vivado simulation waveform**
+
 
 <p align="center">
 <img src="images/vivado_waveform.png" width="900">
@@ -389,7 +329,6 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## FIFO Write & Read Operation
 
-> **Paste FIFO Write/Read waveform**
 
 <p align="center">
 <img src="images/write_read_waveform.png" width="900">
@@ -399,7 +338,6 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## Full and Empty Detection
 
-> **Paste Full & Empty waveform**
 
 <p align="center">
 <img src="images/full_empty_waveform.png" width="900">
@@ -409,7 +347,7 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## Overflow and Underflow Detection
 
-> **Paste Overflow & Underflow waveform**
+
 
 <p align="center">
 <img src="images/overflow_underflow.png" width="900">
@@ -419,7 +357,7 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## Traffic Monitoring
 
-> **Paste Traffic Monitoring waveform**
+
 
 <p align="center">
 <img src="images/traffic_monitor.png" width="900">
@@ -429,7 +367,7 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## Occupancy Analysis
 
-> **Paste Occupancy waveform**
+
 
 <p align="center">
 <img src="images/occupancy.png" width="900">
@@ -439,7 +377,6 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 ## Throughput Monitoring
 
-> **Paste Throughput waveform**
 
 <p align="center">
 <img src="images/throughput.png" width="900">
@@ -451,7 +388,7 @@ RTL verification was performed using **Cadence NCLAUNCH/Xcelium** and **Xilinx V
 
 The Smart FIFO was implemented on an FPGA platform using Xilinx Vivado. The design can display FIFO status, occupancy, utilization, and congestion information in real time.
 
-> **Paste FPGA implementation image**
+
 
 <p align="center">
 <img src="images/fpga_implementation.png" width="900">
@@ -489,82 +426,36 @@ GDSII Generation
 
 ---
 
-# Logic Synthesis
-
-RTL synthesis was performed using **Cadence Genus**.
-
-> **Paste RTL schematic or synthesis result**
-
-<p align="center">
-<img src="images/genus_schematic.png" width="900">
-</p>
-
----
-
 # Physical Design
 
 ## Floorplanning
 
-> **Paste Floorplan image**
-
-<p align="center">
-<img src="images/floorplan.png" width="900">
-</p>
+<img width="1600" height="802" alt="image" src="https://github.com/user-attachments/assets/556132a2-9cac-4e84-9d84-26e3c2f12fe2" />
 
 ---
 
 ## Placement
 
-> **Paste Placement image**
-
-<p align="center">
-<img src="images/placement.png" width="900">
-</p>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/a17d7f65-7e40-4fb4-b67b-0e15b11a2235" />
 
 ---
 
 ## Clock Tree Synthesis (CTS)
 
-> **Paste CTS image**
-
-<p align="center">
-<img src="images/cts.png" width="900">
-</p>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/d65213c4-1f15-4a1f-9b34-0416ce336ce7" />
 
 ---
 
 ## Routing
 
-> **Paste Routing image**
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/eb156593-b396-4cea-be53-5e83c556e062" />
 
-<p align="center">
-<img src="images/routing.png" width="900">
-</p>
 
 ---
 
 ## Final GDSII Layout
 
-> **Paste Final Layout image**
-
-<p align="center">
-<img src="images/gdsii.png" width="900">
-</p>
-
----
-
-# Physical Design Results
-
-| Parameter | Status |
-|-----------|--------|
-| Floorplanning | ✅ |
-| Placement | ✅ |
-| CTS | ✅ |
-| Routing | ✅ |
-| Timing Closure | ✅ |
-| DRC Violations | 0 |
-| Routing Overflow | 0% |
-| GDSII Generated | ✅ |
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/66b7e333-f2b3-41d4-93d3-7ee9e705e8b5" />
 
 ---
 
@@ -574,29 +465,21 @@ RTL synthesis was performed using **Cadence Genus**.
 
 > **Paste Timing Report**
 
-<p align="center">
-<img src="images/timing_report.png" width="800">
-</p>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/febecd83-6d1d-4ca0-8de2-01203a314eb1" />
+
 
 ---
 
 ## Area Report
 
-> **Paste Area Report**
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/36f9fd2e-d4f7-4d42-ab70-bc273d819dfc" />
 
-<p align="center">
-<img src="images/area_report.png" width="800">
-</p>
 
 ---
 
 ## Power Report
 
-> **Paste Power Report**
-
-<p align="center">
-<img src="images/power_report.png" width="800">
-</p>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2e9c7c0c-7859-43ff-81e7-20921a237940" />
 
 ---
 
@@ -672,25 +555,6 @@ Smart_FIFO/
 # Conclusion
 
 The Smart FIFO with Traffic Monitoring and Buffer Utilization Analysis successfully extends the functionality of a conventional FIFO by integrating intelligent monitoring capabilities for occupancy analysis, throughput estimation, congestion detection, and alert generation. The design was verified using RTL simulation, implemented on FPGA, and completed through a full RTL-to-GDSII ASIC design flow using Cadence Genus and Innovus. The proposed architecture provides a scalable and efficient solution for modern communication systems, embedded platforms, and high-performance digital designs.
-
----
-
-# Author
-
-**Surjini S**
-
-*M.Tech VLSI Design*
-
-**Skills**
-
-- Verilog HDL
-- Digital Design
-- RTL Design
-- FPGA Design
-- Cadence Genus
-- Cadence Innovus
-- ASIC Physical Design
-- RTL-to-GDSII Flow
 
 ---
 
